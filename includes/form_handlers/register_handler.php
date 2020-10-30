@@ -107,6 +107,7 @@ if(isset($_POST['reg_button'])){
 			$i++; //Add 1 to i
 			$username = $username . "_" . $i;
 			$check_username_query = mysqli_query($con, "SELECT username FROM users WHERE username='$username'");
+			
 		}
 
 		//Profile picture assignment
